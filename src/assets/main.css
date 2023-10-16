@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* scroll bar styles, Webkit only (Chrome, Edge, Opera, Safari, all browsers on iOS) https://en.wikipedia.org/wiki/List_of_web_browsers#WebKit-based   */
+::-webkit-scrollbar {
+  height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00a295;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #73e2d9;
+  border-radius: 2rem;
+}
+
+/* scroll bar styles, Firefox only */
+* {
+  scrollbar-color: #73e2d9 #00a295;
+}
